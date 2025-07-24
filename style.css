@@ -23,11 +23,30 @@ header {
   margin: auto;
 }
 .project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background: #fff;
   margin: 1rem 0;
   padding: 1rem;
   border-left: 5px solid #673ab7;
   box-shadow: 0 0 5px #ccc;
+  gap: 1rem;
+}
+.project img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 footer {
   text-align: center;
